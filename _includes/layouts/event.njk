@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+---
+<div class="container">
+    <article class="event-detail">
+        {% if image %}
+        <img src="{{ image }}" alt="{{ title }}" class="event-image">
+        {% endif %}
+        <div class="event-header">
+            <h1>{{ title }}</h1>
+            <div class="event-meta">
+                <p><strong>Date:</strong> {{ date | date }}</p>
+                <p><strong>Time:</strong> {{ time }}</p>
+                <p><strong>Location:</strong> {{ location }}</p>
+            </div>
+        </div>
+        <div class="event-content">
+            {{ content | safe }}
+        </div>
+    </article>
+</div>

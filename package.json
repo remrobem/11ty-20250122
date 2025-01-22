@@ -1,0 +1,18 @@
+{
+  "name": "11ty-20250122",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@stackbit/cms-git": "^0.3.0",
+    "@stackbit/types": "^0.10.0",
+    "gray-matter": "^4.0.3"
+  }
+}
