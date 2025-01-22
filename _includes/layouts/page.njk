@@ -3,11 +3,12 @@ layout: layouts/base.njk
 ---
 {% if hero_image %}
 <div class="hero" style="background-image: url('{{ hero_image }}')">
-    <h1>{{ title }}</h1>
-</div>
-{% endif %}
-<div class="container">
-    <div class="content">
-        {{ content | safe }}
+    <div class="container">
+        <h1>{{ title }}</h1>
     </div>
 </div>
+{% endif %}
+
+{{ content | safe }}
+
+
